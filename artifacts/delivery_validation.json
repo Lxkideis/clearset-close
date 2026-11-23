@@ -1,0 +1,36 @@
+{
+  "test_results": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "named_initial_failures_verified": 13,
+  "independent_currency_balances_verified": 3,
+  "historical_replay_preserved": true,
+  "blocking_control_findings_by_stage": [
+    31,
+    6,
+    0
+  ],
+  "source_format_check": "ruff format --check: passed",
+  "python_static_check": "ruff check --select F: passed",
+  "javascript_syntax_check": "node --check: passed",
+  "powershell_syntax_check": "all four scripts parsed without errors",
+  "browser_verified": [
+    "three evidence stages",
+    "original ledger and activity records",
+    "evidence-based note preserves financial status",
+    "SGD and zero-decimal JPY balances",
+    "analyst certification rejected",
+    "immutable historical replay confirmation",
+    "generated finance memo tables"
+  ],
+  "local_full_snapshot_median_ms": 1194.072,
+  "measured_runs_new": true,
+  "runtime": {
+    "python": "3.12.14",
+    "postgresql": "PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35223, 64-bit"
+  },
+  "scope": "Offline synthetic AI-assisted financial-controls lab. No production financial data, live API integration or measured business impact claimed."
+}

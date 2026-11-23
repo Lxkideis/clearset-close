@@ -1,0 +1,724 @@
+{
+  "history": [
+    {
+      "packet": "initial",
+      "imports": [
+        {
+          "source": "ledger",
+          "replayed": true,
+          "rows": 3145,
+          "batch_id": "34418a9a-c301-4b6a-b083-d7478c5442e3"
+        },
+        {
+          "source": "activity",
+          "replayed": true,
+          "rows": 3146,
+          "batch_id": "bbd7cf55-11e7-420d-ae30-e39b05c4826b"
+        },
+        {
+          "source": "membership",
+          "replayed": true,
+          "rows": 3142,
+          "batch_id": "0348eaa3-8e1a-49f2-9610-8dbef298a279"
+        },
+        {
+          "source": "payouts",
+          "replayed": true,
+          "rows": 49,
+          "batch_id": "401a5771-a018-424c-808c-61d182b7c3dc"
+        },
+        {
+          "source": "movements",
+          "replayed": true,
+          "rows": 48,
+          "batch_id": "d24d78e6-7a03-4add-afa9-557a2ad7098a"
+        },
+        {
+          "source": "bank",
+          "replayed": true,
+          "rows": 47,
+          "batch_id": "ceee811d-8f88-4765-b5a8-e45c6b781275"
+        },
+        {
+          "source": "summary",
+          "replayed": true,
+          "rows": 12,
+          "batch_id": "da6c8c04-6a53-4e63-afbe-44e7d901c728"
+        }
+      ],
+      "run": {
+        "id": "cc94318e-4a22-4839-80ab-4c79f67a7302",
+        "period_start": "2026-10-01 00:00:00+08:00",
+        "period_end": "2026-10-21 00:00:00+08:00",
+        "knowledge_cutoff": "2026-10-21 10:00:00+08:00",
+        "created_at": "2026-11-23 12:31:17.845557+08:00",
+        "created_by": "demo-analyst",
+        "fingerprint": "1a6f21c7d96f44b149a1b9f4296854075d98b38c8270c6a12fcf43277866036f",
+        "policy": {
+          "scope": "SGD/USD/JPY; automatic batch reconciliation; no FX conversion; no payout fees",
+          "version": "demo-control-policy-1",
+          "calendar": "Weekends plus explicitly supplied holidays; not a verified bank calendar",
+          "holiday_dates": [],
+          "bank_grace_business_days": 2
+        },
+        "engine_hash": "7b8419a1c6736af5991378a26fc7e4538d919a4be7f07fddbe970629763060df",
+        "lineage": [
+          {
+            "id": "bbd7cf55-11e7-420d-ae30-e39b05c4826b",
+            "sha256": "bfcd525000f67eee3104cdcd7315a4290bbdc161b187350b045a4378f5214e94",
+            "source": "activity",
+            "filename": "initial/activity_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.418630+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3146
+          },
+          {
+            "id": "ceee811d-8f88-4765-b5a8-e45c6b781275",
+            "sha256": "32c28f74aa342935ad9942d736488478706efb9f9eb64f3133466e00a721ea16",
+            "source": "bank",
+            "filename": "initial/bank_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.786076+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 47
+          },
+          {
+            "id": "34418a9a-c301-4b6a-b083-d7478c5442e3",
+            "sha256": "8740340dc87498a984efa94290ef2dd8234ca51363acf310021173006458bce4",
+            "source": "ledger",
+            "filename": "initial/ledger_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.148016+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3145
+          },
+          {
+            "id": "0348eaa3-8e1a-49f2-9610-8dbef298a279",
+            "sha256": "fb687bc1a6d0955c30230e68c8635cd7e2cff531f9cecf43dd30ac8650b3ea00",
+            "source": "membership",
+            "filename": "initial/membership_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.736275+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3142
+          },
+          {
+            "id": "d24d78e6-7a03-4add-afa9-557a2ad7098a",
+            "sha256": "c7deb1ea5ff594979c842c2fa441c7b107088d599705e67c44542c1ed0ee23c6",
+            "source": "movements",
+            "filename": "initial/movements_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.781775+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 48
+          },
+          {
+            "id": "401a5771-a018-424c-808c-61d182b7c3dc",
+            "sha256": "3990fc0f5ba93331b4f527ba7700412988cad118dcaa098d14c0c8f6bbc43095",
+            "source": "payouts",
+            "filename": "initial/payouts_data.json",
+            "ingested_at": "2026-11-23 12:31:16.777876+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 49
+          },
+          {
+            "id": "da6c8c04-6a53-4e63-afbe-44e7d901c728",
+            "sha256": "8094c9d40557ff66445a2358516292f8216663344c86aa94824f5a4eca4b4ae9",
+            "source": "summary",
+            "filename": "initial/summary_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.788413+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 12
+          }
+        ],
+        "stats": {
+          "by_kind": {
+            "bank": {
+              "unmapped_bank_credit": 1
+            },
+            "cost": {
+              "matched": 5,
+              "fee_variance": 1
+            },
+            "aging": {
+              "unallocated_aged": 3,
+              "not_yet_available": 2
+            },
+            "payout": {
+              "matched": 34,
+              "bank_missing": 2,
+              "bank_pending": 2,
+              "bank_amount_mismatch": 1,
+              "untrusted_membership": 6,
+              "batch_amount_mismatch": 1,
+              "ambiguous_bank_reference": 1,
+              "payout_movement_mismatch": 2
+            },
+            "balance": {
+              "activity_total_mismatch": 2,
+              "summary_identity_mismatch": 1
+            },
+            "quality": {
+              "source_arithmetic_error": 1
+            },
+            "coverage": {
+              "matched": 7
+            },
+            "membership": {
+              "matched": 3136,
+              "currency_mismatch": 1,
+              "invalid_source_arithmetic": 1,
+              "missing_activity_evidence": 2,
+              "report_component_mismatch": 2
+            },
+            "transaction": {
+              "matched": 3136,
+              "fee_mismatch": 1,
+              "missing_ledger": 1,
+              "currency_mismatch": 1,
+              "missing_processor": 1,
+              "offsetting_gross_fee": 1,
+              "duplicate_processor_key": 1,
+              "invalid_source_arithmetic": 1
+            }
+          },
+          "results": 6357,
+          "ledger_keys": 3142,
+          "source_records": 9589,
+          "severity_counts": {
+            "pass": 6318,
+            "blocker": 31,
+            "pending": 4,
+            "advisory": 4
+          },
+          "ready_for_review": false,
+          "matched_ledger_keys": 3136,
+          "ledger_key_match_rate": 99.809,
+          "duration_ms_before_commit": 1048.391
+        },
+        "completed_at": "2026-11-23 12:31:17.955735+08:00",
+        "replayed": true
+      },
+      "wall_ms": 214.577
+    },
+    {
+      "packet": "repair_data",
+      "imports": [
+        {
+          "source": "activity",
+          "replayed": true,
+          "rows": 4,
+          "batch_id": "ffd24ede-b965-468d-9677-3a6a4848cb72"
+        },
+        {
+          "source": "payouts",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "b0c6b9b9-0b7e-4505-9a48-3e42e8c8a2ab"
+        },
+        {
+          "source": "activity",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "cacab62e-0c2c-4411-bd7a-76c0484d4992"
+        },
+        {
+          "source": "ledger",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "92be8fd7-88cc-4303-a7a2-c8c19d43c931"
+        },
+        {
+          "source": "membership",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "5837b066-a61c-4f78-bfa5-d38a5263c074"
+        },
+        {
+          "source": "movements",
+          "replayed": true,
+          "rows": 2,
+          "batch_id": "cece63d4-a082-4ffb-85b3-5f5266661eed"
+        },
+        {
+          "source": "activity",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "29127237-9c10-4025-8a55-60e42283d596"
+        },
+        {
+          "source": "membership",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "379cbc37-0820-4bb7-b758-0f78fdd24019"
+        }
+      ],
+      "run": {
+        "id": "75fd8736-e247-4254-879e-175ca2706c32",
+        "period_start": "2026-10-01 00:00:00+08:00",
+        "period_end": "2026-10-21 00:00:00+08:00",
+        "knowledge_cutoff": "2026-10-21 11:00:00+08:00",
+        "created_at": "2026-11-23 12:31:19.073283+08:00",
+        "created_by": "demo-analyst",
+        "fingerprint": "ffead238413feda84ed56967ee731ebe438fe751bdfbee28974660c0ab7210ef",
+        "policy": {
+          "scope": "SGD/USD/JPY; automatic batch reconciliation; no FX conversion; no payout fees",
+          "version": "demo-control-policy-1",
+          "calendar": "Weekends plus explicitly supplied holidays; not a verified bank calendar",
+          "holiday_dates": [],
+          "bank_grace_business_days": 2
+        },
+        "engine_hash": "7b8419a1c6736af5991378a26fc7e4538d919a4be7f07fddbe970629763060df",
+        "lineage": [
+          {
+            "id": "bbd7cf55-11e7-420d-ae30-e39b05c4826b",
+            "sha256": "bfcd525000f67eee3104cdcd7315a4290bbdc161b187350b045a4378f5214e94",
+            "source": "activity",
+            "filename": "initial/activity_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.418630+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3146
+          },
+          {
+            "id": "29127237-9c10-4025-8a55-60e42283d596",
+            "sha256": "df678391089c70c4a16f8bb0902ad1ff8a23dbd2eecad10f50b745d540d45fe1",
+            "source": "activity",
+            "filename": "repair_data/activity_retract.csv",
+            "ingested_at": "2026-11-23 12:31:18.027869+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "cacab62e-0c2c-4411-bd7a-76c0484d4992",
+            "sha256": "3ab2a73daab6407df5b000a267c1cf754322cb6c679bbd126f331dfbc530c1d2",
+            "source": "activity",
+            "filename": "repair_data/activity_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.025851+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "ffd24ede-b965-468d-9677-3a6a4848cb72",
+            "sha256": "e027234762de6281e27019688ca0995243397491e1e488514443f8c939164dfc",
+            "source": "activity",
+            "filename": "repair_data/activity_correct.csv",
+            "ingested_at": "2026-11-23 12:31:18.023986+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 4
+          },
+          {
+            "id": "ceee811d-8f88-4765-b5a8-e45c6b781275",
+            "sha256": "32c28f74aa342935ad9942d736488478706efb9f9eb64f3133466e00a721ea16",
+            "source": "bank",
+            "filename": "initial/bank_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.786076+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 47
+          },
+          {
+            "id": "34418a9a-c301-4b6a-b083-d7478c5442e3",
+            "sha256": "8740340dc87498a984efa94290ef2dd8234ca51363acf310021173006458bce4",
+            "source": "ledger",
+            "filename": "initial/ledger_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.148016+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3145
+          },
+          {
+            "id": "92be8fd7-88cc-4303-a7a2-c8c19d43c931",
+            "sha256": "e823c172ffecf618139e2fcbd6b52893eb34b8c180b89a25a5209c201094e440",
+            "source": "ledger",
+            "filename": "repair_data/ledger_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.026283+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "0348eaa3-8e1a-49f2-9610-8dbef298a279",
+            "sha256": "fb687bc1a6d0955c30230e68c8635cd7e2cff531f9cecf43dd30ac8650b3ea00",
+            "source": "membership",
+            "filename": "initial/membership_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.736275+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3142
+          },
+          {
+            "id": "379cbc37-0820-4bb7-b758-0f78fdd24019",
+            "sha256": "c34e9647036003bbe61efb094bdae17dc3461cad0c370d349924c74d6067e1e0",
+            "source": "membership",
+            "filename": "repair_data/membership_retract.csv",
+            "ingested_at": "2026-11-23 12:31:18.028241+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "5837b066-a61c-4f78-bfa5-d38a5263c074",
+            "sha256": "a202ec2a2218b579dffccc4ca9513ed56c10e87132ba7add29fef60cf9670f6a",
+            "source": "membership",
+            "filename": "repair_data/membership_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.026695+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "d24d78e6-7a03-4add-afa9-557a2ad7098a",
+            "sha256": "c7deb1ea5ff594979c842c2fa441c7b107088d599705e67c44542c1ed0ee23c6",
+            "source": "movements",
+            "filename": "initial/movements_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.781775+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 48
+          },
+          {
+            "id": "cece63d4-a082-4ffb-85b3-5f5266661eed",
+            "sha256": "980f750420bb22a6956ef63e66b0f2b7d2bc09904956897d4ea228b0685dfbbd",
+            "source": "movements",
+            "filename": "repair_data/movements_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.027340+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 2
+          },
+          {
+            "id": "401a5771-a018-424c-808c-61d182b7c3dc",
+            "sha256": "3990fc0f5ba93331b4f527ba7700412988cad118dcaa098d14c0c8f6bbc43095",
+            "source": "payouts",
+            "filename": "initial/payouts_data.json",
+            "ingested_at": "2026-11-23 12:31:16.777876+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 49
+          },
+          {
+            "id": "b0c6b9b9-0b7e-4505-9a48-3e42e8c8a2ab",
+            "sha256": "c872d64583aa830a5d96effc0b63f6664fc8a4baaa4d83cbcde73baac31e28b9",
+            "source": "payouts",
+            "filename": "repair_data/payouts_correct.json",
+            "ingested_at": "2026-11-23 12:31:18.025328+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "da6c8c04-6a53-4e63-afbe-44e7d901c728",
+            "sha256": "8094c9d40557ff66445a2358516292f8216663344c86aa94824f5a4eca4b4ae9",
+            "source": "summary",
+            "filename": "initial/summary_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.788413+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 12
+          }
+        ],
+        "stats": {
+          "by_kind": {
+            "bank": {
+              "unmapped_bank_credit": 1
+            },
+            "cost": {
+              "matched": 6
+            },
+            "aging": {
+              "unallocated_aged": 1,
+              "not_yet_available": 2
+            },
+            "payout": {
+              "matched": 43,
+              "bank_missing": 2,
+              "bank_pending": 2,
+              "bank_amount_mismatch": 1,
+              "ambiguous_bank_reference": 1
+            },
+            "balance": {
+              "matched": 2,
+              "summary_identity_mismatch": 1
+            },
+            "coverage": {
+              "matched": 7
+            },
+            "membership": {
+              "matched": 3142
+            },
+            "transaction": {
+              "matched": 3143
+            }
+          },
+          "results": 6354,
+          "ledger_keys": 3143,
+          "source_records": 9592,
+          "severity_counts": {
+            "pass": 6343,
+            "blocker": 6,
+            "pending": 4,
+            "advisory": 1
+          },
+          "ready_for_review": false,
+          "matched_ledger_keys": 3143,
+          "ledger_key_match_rate": 100.0,
+          "duration_ms_before_commit": 1040.268
+        },
+        "completed_at": "2026-11-23 12:31:19.213557+08:00",
+        "replayed": true
+      },
+      "wall_ms": 136.549
+    },
+    {
+      "packet": "repair_bank",
+      "imports": [
+        {
+          "source": "bank",
+          "replayed": true,
+          "rows": 2,
+          "batch_id": "c88efc96-0efc-4a84-8ea0-6d7e3faa7226"
+        },
+        {
+          "source": "summary",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "6f0800b3-30c4-4c5f-977d-5855bc97f511"
+        },
+        {
+          "source": "bank",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "59f6b88d-4531-457c-93cf-7f685b59f353"
+        },
+        {
+          "source": "bank",
+          "replayed": true,
+          "rows": 1,
+          "batch_id": "e1da8083-5f86-43be-a6ad-c75f4701b571"
+        }
+      ],
+      "run": {
+        "id": "f1ed43e4-d252-4bef-be02-ff0e72b7b718",
+        "period_start": "2026-10-01 00:00:00+08:00",
+        "period_end": "2026-10-21 00:00:00+08:00",
+        "knowledge_cutoff": "2026-10-21 12:00:00+08:00",
+        "created_at": "2026-11-23 12:31:20.309285+08:00",
+        "created_by": "demo-analyst",
+        "fingerprint": "268d303077446c0d1219e4ec02ad7762bc24fddc192968882920f5fb57d12311",
+        "policy": {
+          "scope": "SGD/USD/JPY; automatic batch reconciliation; no FX conversion; no payout fees",
+          "version": "demo-control-policy-1",
+          "calendar": "Weekends plus explicitly supplied holidays; not a verified bank calendar",
+          "holiday_dates": [],
+          "bank_grace_business_days": 2
+        },
+        "engine_hash": "7b8419a1c6736af5991378a26fc7e4538d919a4be7f07fddbe970629763060df",
+        "lineage": [
+          {
+            "id": "bbd7cf55-11e7-420d-ae30-e39b05c4826b",
+            "sha256": "bfcd525000f67eee3104cdcd7315a4290bbdc161b187350b045a4378f5214e94",
+            "source": "activity",
+            "filename": "initial/activity_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.418630+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3146
+          },
+          {
+            "id": "29127237-9c10-4025-8a55-60e42283d596",
+            "sha256": "df678391089c70c4a16f8bb0902ad1ff8a23dbd2eecad10f50b745d540d45fe1",
+            "source": "activity",
+            "filename": "repair_data/activity_retract.csv",
+            "ingested_at": "2026-11-23 12:31:18.027869+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "cacab62e-0c2c-4411-bd7a-76c0484d4992",
+            "sha256": "3ab2a73daab6407df5b000a267c1cf754322cb6c679bbd126f331dfbc530c1d2",
+            "source": "activity",
+            "filename": "repair_data/activity_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.025851+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "ffd24ede-b965-468d-9677-3a6a4848cb72",
+            "sha256": "e027234762de6281e27019688ca0995243397491e1e488514443f8c939164dfc",
+            "source": "activity",
+            "filename": "repair_data/activity_correct.csv",
+            "ingested_at": "2026-11-23 12:31:18.023986+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 4
+          },
+          {
+            "id": "ceee811d-8f88-4765-b5a8-e45c6b781275",
+            "sha256": "32c28f74aa342935ad9942d736488478706efb9f9eb64f3133466e00a721ea16",
+            "source": "bank",
+            "filename": "initial/bank_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.786076+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 47
+          },
+          {
+            "id": "e1da8083-5f86-43be-a6ad-c75f4701b571",
+            "sha256": "c73e9e564e16050ac134b3c37e23f8ac3ecbf0c5ee32a88b446605f140293d58",
+            "source": "bank",
+            "filename": "repair_bank/bank_retract.csv",
+            "ingested_at": "2026-11-23 12:31:19.272259+08:00",
+            "observed_at": "2026-10-21 12:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "c88efc96-0efc-4a84-8ea0-6d7e3faa7226",
+            "sha256": "f2665dcd4ebcd8525e7b9c2bba7ddd252c202f67c94eebf08406a188c1a36c4e",
+            "source": "bank",
+            "filename": "repair_bank/bank_correct.csv",
+            "ingested_at": "2026-11-23 12:31:19.270352+08:00",
+            "observed_at": "2026-10-21 12:00:00+08:00",
+            "record_count": 2
+          },
+          {
+            "id": "59f6b88d-4531-457c-93cf-7f685b59f353",
+            "sha256": "4f537cc2d99aab5f595745ac7753b220dfc9cc3bfd8b77001409d56e5a35a9b6",
+            "source": "bank",
+            "filename": "repair_bank/bank_late.csv",
+            "ingested_at": "2026-11-23 12:31:19.271838+08:00",
+            "observed_at": "2026-10-21 12:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "34418a9a-c301-4b6a-b083-d7478c5442e3",
+            "sha256": "8740340dc87498a984efa94290ef2dd8234ca51363acf310021173006458bce4",
+            "source": "ledger",
+            "filename": "initial/ledger_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.148016+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3145
+          },
+          {
+            "id": "92be8fd7-88cc-4303-a7a2-c8c19d43c931",
+            "sha256": "e823c172ffecf618139e2fcbd6b52893eb34b8c180b89a25a5209c201094e440",
+            "source": "ledger",
+            "filename": "repair_data/ledger_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.026283+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "0348eaa3-8e1a-49f2-9610-8dbef298a279",
+            "sha256": "fb687bc1a6d0955c30230e68c8635cd7e2cff531f9cecf43dd30ac8650b3ea00",
+            "source": "membership",
+            "filename": "initial/membership_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.736275+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 3142
+          },
+          {
+            "id": "5837b066-a61c-4f78-bfa5-d38a5263c074",
+            "sha256": "a202ec2a2218b579dffccc4ca9513ed56c10e87132ba7add29fef60cf9670f6a",
+            "source": "membership",
+            "filename": "repair_data/membership_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.026695+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "379cbc37-0820-4bb7-b758-0f78fdd24019",
+            "sha256": "c34e9647036003bbe61efb094bdae17dc3461cad0c370d349924c74d6067e1e0",
+            "source": "membership",
+            "filename": "repair_data/membership_retract.csv",
+            "ingested_at": "2026-11-23 12:31:18.028241+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "d24d78e6-7a03-4add-afa9-557a2ad7098a",
+            "sha256": "c7deb1ea5ff594979c842c2fa441c7b107088d599705e67c44542c1ed0ee23c6",
+            "source": "movements",
+            "filename": "initial/movements_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.781775+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 48
+          },
+          {
+            "id": "cece63d4-a082-4ffb-85b3-5f5266661eed",
+            "sha256": "980f750420bb22a6956ef63e66b0f2b7d2bc09904956897d4ea228b0685dfbbd",
+            "source": "movements",
+            "filename": "repair_data/movements_late.csv",
+            "ingested_at": "2026-11-23 12:31:18.027340+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 2
+          },
+          {
+            "id": "401a5771-a018-424c-808c-61d182b7c3dc",
+            "sha256": "3990fc0f5ba93331b4f527ba7700412988cad118dcaa098d14c0c8f6bbc43095",
+            "source": "payouts",
+            "filename": "initial/payouts_data.json",
+            "ingested_at": "2026-11-23 12:31:16.777876+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 49
+          },
+          {
+            "id": "b0c6b9b9-0b7e-4505-9a48-3e42e8c8a2ab",
+            "sha256": "c872d64583aa830a5d96effc0b63f6664fc8a4baaa4d83cbcde73baac31e28b9",
+            "source": "payouts",
+            "filename": "repair_data/payouts_correct.json",
+            "ingested_at": "2026-11-23 12:31:18.025328+08:00",
+            "observed_at": "2026-10-21 11:00:00+08:00",
+            "record_count": 1
+          },
+          {
+            "id": "da6c8c04-6a53-4e63-afbe-44e7d901c728",
+            "sha256": "8094c9d40557ff66445a2358516292f8216663344c86aa94824f5a4eca4b4ae9",
+            "source": "summary",
+            "filename": "initial/summary_data.csv",
+            "ingested_at": "2026-11-23 12:31:16.788413+08:00",
+            "observed_at": "2026-10-21 10:00:00+08:00",
+            "record_count": 12
+          },
+          {
+            "id": "6f0800b3-30c4-4c5f-977d-5855bc97f511",
+            "sha256": "602ec1f9c482108f1d17abacf85ea32171db0239bf22487a5c62adadaa63acc3",
+            "source": "summary",
+            "filename": "repair_bank/summary_correct.csv",
+            "ingested_at": "2026-11-23 12:31:19.271403+08:00",
+            "observed_at": "2026-10-21 12:00:00+08:00",
+            "record_count": 1
+          }
+        ],
+        "stats": {
+          "by_kind": {
+            "cost": {
+              "matched": 6
+            },
+            "aging": {
+              "unallocated_aged": 1,
+              "not_yet_available": 2
+            },
+            "payout": {
+              "matched": 47,
+              "bank_pending": 2
+            },
+            "balance": {
+              "matched": 3
+            },
+            "coverage": {
+              "matched": 7
+            },
+            "membership": {
+              "matched": 3142
+            },
+            "transaction": {
+              "matched": 3143
+            }
+          },
+          "results": 6353,
+          "ledger_keys": 3143,
+          "source_records": 9592,
+          "severity_counts": {
+            "pass": 6348,
+            "pending": 4,
+            "advisory": 1
+          },
+          "ready_for_review": true,
+          "matched_ledger_keys": 3143,
+          "ledger_key_match_rate": 100.0,
+          "duration_ms_before_commit": 1031.907
+        },
+        "completed_at": "2026-11-23 12:31:20.416705+08:00",
+        "replayed": true
+      },
+      "wall_ms": 142.523
+    }
+  ],
+  "independent_named_findings_verified": 13,
+  "golden_currency_balances_verified": 3,
+  "old_snapshot_replay_unchanged": true,
+  "final_blockers": 0,
+  "note": "Synthetic truth and intentionally flawed extracts; no actual business impact or live Stripe API."
+}

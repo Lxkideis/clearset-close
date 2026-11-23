@@ -1,0 +1,10 @@
+[project]
+name = "stripe-close-workbench"
+version = "1.0.0"
+description = "An offline financial-controls portfolio with Stripe report contracts and independently modeled bank evidence"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"

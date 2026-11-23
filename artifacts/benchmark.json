@@ -1,0 +1,60 @@
+{
+  "measurement": "Full financial-control snapshot including persistence; ingestion excluded; one warm-up plus seven different knowledge-cutoff snapshots",
+  "wall_ms": [
+    1203.539,
+    1172.367,
+    1273.208,
+    1194.072,
+    1184.439,
+    1197.662,
+    1176.125
+  ],
+  "median_ms": 1194.072,
+  "min_ms": 1172.367,
+  "max_ms": 1273.208,
+  "all_measured_runs_new": true,
+  "runs": [
+    {
+      "id": "7afca7a4-19ce-4b0e-aa81-5ea31f661727",
+      "replayed": false
+    },
+    {
+      "id": "7f70c235-1fe8-45a2-954d-fdab89c49a67",
+      "replayed": false
+    },
+    {
+      "id": "5ea48746-3831-4739-8f74-3a91a7f6e9bb",
+      "replayed": false
+    },
+    {
+      "id": "d8e6631c-f405-4a4a-a2fc-90e592686fd1",
+      "replayed": false
+    },
+    {
+      "id": "b9315b62-016e-40a5-8354-7c251ffee3a0",
+      "replayed": false
+    },
+    {
+      "id": "a6286edd-cf08-4b39-80cb-71d42093a934",
+      "replayed": false
+    },
+    {
+      "id": "c40a7e73-53a7-4726-9367-eb11cd71169d",
+      "replayed": false
+    }
+  ],
+  "bulk_charges": 3000,
+  "golden_source_counts": {
+    "ledger": 3146,
+    "activity": 3146,
+    "membership": 3142,
+    "payouts": 49,
+    "movements": 50,
+    "bank": 47,
+    "summary": 12
+  },
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "postgresql": "PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35223, 64-bit",
+  "limits": "Small local synthetic fixture. No production throughput, business time savings, SLA, load or scale claim."
+}
